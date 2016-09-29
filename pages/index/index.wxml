@@ -1,0 +1,35 @@
+<!--<import src="../common/footer.wxml" />
+<view class="index">
+    <view class="head" bindtap="bindViewTap">
+        <view class="title">欢迎你,{{userInfo.nickName}}来到大医师</view>
+    </view>
+
+    <view class="body" wx:for="{{testarray}}"  wx:for-item="obj">
+       <text>校名:{{obj.name}}</text>,
+       <text>地址:{{obj.city}}</text>
+    </view>
+    <button bindtap="bindNextPage">下一页</button>
+<template is="footer" data="{{userInfo}}"/>
+</view>-->
+<!-- 大医师 -->
+<loading hidden="{{!loading}}">
+  加载中...
+</loading>
+<view class="page-header">
+  <text class="page-header-text">{{title}}</text>
+</view>
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="nextPage">
+  <navigator url="../movie/movie?id={{item.id}}" wx:for="{{medicines}}">
+    <view class="item">
+    <image class="poster" src="http://static.liaozhiwei.com/tubiao/jinmao.jpg"></image>
+    <view class="meta">
+      <text class="title">{{item.medName}}</text>
+      <text class="sub-title">{{item.medCompany}}</text>
+      <!--<view class="artists"><text wx:for="{{item.directors}}">{{item.name}} </text></view>-->
+    </view>
+    <!--<view class="rating">
+      <text>{{item.rating.average}}</text>
+    </view>-->
+    </view>
+  </navigator>
+</scroll-view>

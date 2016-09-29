@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mypage/mypage",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "大医师demo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/shouyeHL.png",
+      "selectedIconPath": "images/shouye.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/mypage/mypage",
+      "iconPath": "images/mydoctorHL.png",
+      "selectedIconPath": "images/mydoctor.png",
+      "text": "我的医生"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "iconPath": "images/chaxunHL.png",
+      "selectedIconPath": "images/chaxun.png",
+      "text": "查询"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,7 @@
+<template name="footer">
+  <view>
+    <text> {{userInfo.nickName}} </text>
+    <text> {{userInfo.province}} </text>
+    <text> {{userInfo.avatarUrl}} </text>
+  </view>
+</template>
